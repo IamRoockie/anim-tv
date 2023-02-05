@@ -1,0 +1,169 @@
+@media (max-width: 1400px) {
+	.hero__bg-adv {
+		right: 7rem;
+		width: 70rem;
+	}
+}
+
+@media (max-width: 1200px) {
+	html {
+		font-size: 9px;
+	}
+}
+
+@media (max-width: 1024px) {
+	body {
+		padding: 0;
+	}
+
+	.menu-top {
+		display: block;
+	}
+
+	.container {
+		padding: 0 5rem;
+	}
+
+	.hero__bg-adv {
+		right    : 3rem;
+		bottom   : 50%;
+		transform: translateY(50%);
+		width    : 50rem;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.browse__menu {
+		display: flex;
+	}
+
+	.browse__info {
+		max-width: 32rem;
+	}
+}
+
+@media (max-width: 850px) {
+	.support {
+		&__title {
+			padding: 15px 60px 15px 15px;
+		}
+
+		&__form {
+			padding: 15px;
+			row-gap: 10px;
+		}
+	}
+
+	.browse__duration {
+		left  : auto;
+		right : 15px;
+		bottom: 60px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0 3rem;
+	}
+
+	.header__time {
+		font-size: 2.5rem;
+	}
+
+	.diamond {
+		display: none;
+	}
+
+	.hero__bg-adv {
+		display: none;
+	}
+
+	.browse {
+		padding: 0;
+
+		&__top {
+			margin-bottom : 4rem;
+			flex-direction: column;
+			align-items   : flex-start;
+		}
+
+		&__menu {
+			margin: 20px auto 0;
+		}
+
+		&__content {
+			row-gap: 3rem;
+		}
+
+		&__movie {
+			flex-direction: column;
+			text-align    : center;
+		}
+
+		&__img-box,
+		&__info {
+			max-width: 60rem;
+			width    : 100%;
+			margin   : 0 auto;
+		}
+
+		&__info {
+			max-width: 60rem;
+			margin   : 0 auto;
+			padding  : 15px 0 0;
+		}
+
+		&__add,
+		&__add--active {
+			position    : static;
+			margin      : 20px auto;
+			padding-left: 5px;
+			border      : none;
+
+			&:hover {
+				border: none;
+			}
+
+			&::before {
+				position    : relative;
+				top         : 1px;
+				display     : inline-block;
+				margin-right: 10px;
+			}
+		}
+
+		&__add--active::before {
+			top: 2px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+
+	.browse__top {
+		margin-bottom: 2rem;
+	}
+
+	.browse__menu {
+		margin         : 20px 0 0;
+		width          : 100%;
+		justify-content: space-between;
+		column-gap     : 1rem;
+	}
+}
+
+@media (max-width: 380px) {
+	.header__date {
+		display: none;
+	}
+
+	.browse__finish {
+		display: none;
+	}
+
+	.browse__duration {
+		bottom: 15px;
+	}
+}

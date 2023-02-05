@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anim TV</title>
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<!-- Support Window -->
+	<img class="diamond" src="images/diamond.webp" alt="diamond">
+	<div class="support">
+		<div class="support__title">
+			Связаться с поддержкой
+			<div class="support__close">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 640 640">
+					<path fill="#fff"
+						d="M97.693 550.173c-60.273-58.271-97.692-139.851-97.692-230.173 0-176.731 143.269-320 320-320 90.321 0 171.902 37.42 230.086 97.602l0.086 0.090c55.578 57.487 89.827 135.897 89.827 222.307 0 176.731-143.269 320-320 320-86.41 0-164.821-34.249-222.398-89.914l0.090 0.086zM142.813 505.052c46.352 46.353 110.388 75.022 181.12 75.022 141.464 0 256.142-114.679 256.142-256.142 0-70.732-28.67-134.767-75.022-181.12v0c-46.352-46.352-110.388-75.023-181.12-75.023-141.464 0-256.142 114.679-256.142 256.142 0 70.732 28.67 134.767 75.023 181.12v0zM459.613 233.373l-90.56 90.56 90.56 90.56-45.12 45.12-90.56-90.56-90.56 90.56-45.12-45.12 90.56-90.56-90.56-90.56 45.12-45.12 90.56 90.56 90.56-90.56 45.12 45.12z">
+					</path>
+				</svg>
+			</div>
+		</div>
+		<form class="support__form">
+			<label>
+				<div>Ваше имя</div>
+				<input class="support__input" name="name" type="text" placeholder="Иван" required>
+			</label>
+			<label>
+				<div>Ваш email</div>
+				<input class="support__input" name="email" type="email" placeholder="ivan@ivan.ru" required>
+			</label>
+			<label>
+				<div>Ваше сообщение</div>
+				<textarea class="support__input support__text" name="text" placeholder="Сообщение" required></textarea>
+			</label>
+			<button class="support__btn" type="submit">
+				Отправить
+			</button>
+		</form>
+	</div>
+
+	<!-- Modal Video -->
+	<div class="modal-video">
+		<div class="modal-video__close">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1024 1024">
+				<path fill="#ddd"
+					d="M696.022 512.026l312.741 312.741c20.316 20.316 20.316 53.303 0 73.619l-110.352 110.352c-20.316 20.316-53.252 20.316-73.619 0l-312.792-312.741-312.792 312.741c-20.316 20.316-53.252 20.316-73.568 0l-110.403-110.352c-20.316-20.316-20.316-53.252 0-73.619l312.792-312.741-312.792-312.792c-20.316-20.316-20.316-53.303 0-73.619l110.454-110.352c20.316-20.316 53.252-20.316 73.568 0l312.741 312.792 312.792-312.792c20.316-20.316 53.252-20.316 73.619 0l110.352 110.403c20.316 20.316 20.316 53.252 0 73.619l-312.741 312.741z">
+				</path>
+			</svg>
+		</div>
+		<div class="modal-video__box">
+			<h2>Video Player</h2>
+		</div>
+	</div>
+
+	<!-- Top Menu -->
+	<div class="menu-top menu-top--hidden">
+		<div class="menu-top__btn">
+			<span class="menu-top__name">Menu</span>
+		</div>
+
+		<ul class="menu-top__list">
+			<li class="menu-top__item">
+				<a class="menu-top__link" href="">
+					Upcoming
+				</a>
+			</li>
+			<li class="menu-top__item">
+				<a class="menu-top__link" href="">
+					Genere
+				</a>
+			</li>
+			<li class="menu-top__item">
+				<a class="menu-top__link" href="">
+					Videos
+				</a>
+			</li>
+			<li class="menu-top__item">
+				<a class="menu-top__link" href="">
+					Subscription
+				</a>
+			</li>
+		</ul>
+
+		<div class="menu-top__close">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1024 1024">
+				<path fill="#fff"
+					d="M696.022 512.026l312.741 312.741c20.316 20.316 20.316 53.303 0 73.619l-110.352 110.352c-20.316 20.316-53.252 20.316-73.619 0l-312.792-312.741-312.792 312.741c-20.316 20.316-53.252 20.316-73.568 0l-110.403-110.352c-20.316-20.316-20.316-53.252 0-73.619l312.792-312.741-312.792-312.792c-20.316-20.316-20.316-53.303 0-73.619l110.454-110.352c20.316-20.316 53.252-20.316 73.568 0l312.741 312.792 312.792-312.792c20.316-20.316 53.252-20.316 73.619 0l110.352 110.403c20.316 20.316 20.316 53.252 0 73.619l-312.741 312.741z">
+				</path>
+			</svg>
+		</div>
+	</div>
+
+	<main class="main">
+		<!-- Header -->
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="logo">AnimTv</div>
+					<ul class="menu">
+						<li class="menu__item">
+							<a class="menu__link menu__link--active" href="">Upcoming</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="">Genere</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="">Videos</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="">Subscription</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link menu__search" href="" title="search">
+								<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 21 20">
+									<path fill="#707077"
+										d="M8.805 15.165c-3.676 0-6.664-2.988-6.664-6.66a6.672 6.672 0 0 1 6.664-6.664c3.672 0 6.664 2.992 6.664 6.664 0 3.672-2.992 6.66-6.664 6.66zM20 18.52l-4.764-4.743A8.318 8.318 0 0 0 8.806.19 8.315 8.315 0 0 0 .49 8.505c0 4.59 3.72 8.315 8.315 8.315a8.271 8.271 0 0 0 5.267-1.88l4.743 4.739a.849.849 0 0 0 1.185 0 .857.857 0 0 0 0-1.16z" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<div class="header__datetime">
+						<div class="header__time">06:20 PM</div>
+						<div class="header__date">
+							<span class="header__date-day">Nov 10</span>
+							<span class="header__date-week">Wednesday</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Promo -->
+		<section class="hero">
+			<div class="container">
+				<img class="hero__bg" src="images/hero/hero-bg.webp" alt="hero bg">
+				<img class="hero__bg-adv" src="images/hero/hero-advanced.webp" alt="hero advanced">
+				<div class="hero__content">
+					<h1 class="hero__title">Frozen 2</h1>
+					<div class="hero__info">
+						2019
+						<span class="hero__delim"></span>
+						Drama/Fantasy
+						<span class="hero__delim"></span>
+						2 hours
+					</div>
+					<div class="hero__desc">
+						Elsa the Snow Queen and her sister Anna embark on an adventure far away from the kingdom of Arendelle….
+					</div>
+					<div class="hero__release">
+						Release date : 22 November 2019
+					</div>
+					<button class="hero__watch">
+						Watch Trailer
+						<span class="hero__watch-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 640 640">
+								<path class="hero__shape" fill="#1e234b" d="M608 320l-576 320v-640l576 320z"></path>
+							</svg>
+						</span>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Recommended Movies -->
+		<section class="recommended">
+			<div class="container">
+				<div class="recommended__top">
+					<h2 class="title">Recommended Movies</h2>
+					<div class="recommended__btns">
+						<div class="recommended__btn recommended__btn--prev">
+							<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 640 640">
+								<path fill="#1e234b" d="M608 0v640l-576-320 576-320z"></path>
+							</svg>
+						</div>
+						<div class="recommended__btn recommended__btn--next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 640 640">
+								<path fill="#1e234b" d="M608 320l-576 320v-640l576 320z"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<ul class="recommended__movies">
+					<li class="recommended__movie">
+						<img class="recommended__img" src="images/recommended/1.webp" alt="recommended movie">
+					</li>
+					<li class="recommended__movie">
+						<img class="recommended__img" src="images/recommended/2.webp" alt="recommended movie">
+					</li>
+					<li class="recommended__movie">
+						<img class="recommended__img" src="images/recommended/3.webp" alt="recommended movie">
+					</li>
+					<li class="recommended__movie">
+						<img class="recommended__img" src="images/recommended/4.webp" alt="recommended movie">
+					</li>
+					<li class="recommended__movie">
+						<img class="recommended__img" src="images/recommended/1.webp" alt="recommended movie">
+					</li>
+					<li class="recommended__movie">
+						<img class="recommended__img" src="images/recommended/2.webp" alt="recommended movie">
+					</li>
+					<li class="recommended__movie">
+						<img class="recommended__img" src="images/recommended/3.webp" alt="recommended movie">
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Browse More Movies -->
+		<section class="browse">
+			<div class="container">
+				<div class="browse__top">
+					<h2 class="title">Browse More Movies</h2>
+					<ul class="menu browse__menu">
+						<li class="menu__item">
+							<button class="menu__link browse__link menu__link--active" data-tab-name="1">
+								Trending
+							</button>
+						</li>
+						<li class="menu__item">
+							<button class="menu__link browse__link" data-tab-name="2">
+								Top Rated
+							</button>
+						</li>
+						<li class="menu__item">
+							<button class="menu__link browse__link" data-tab-name="3">
+								New Arrival
+							</button>
+						</li>
+					</ul>
+				</div>
+				<div class="browse__content">
+					<div class="browse__movie" data-tab-group="1">
+						<div class="browse__img-box">
+							<img class="browse__img" src="images/browse/1.webp" alt="browse movie">
+							<span class="browse__duration">
+								01:48
+							</span>
+							<span class="browse__finish">
+								You can finish this movie by
+								<span class="browse__time">08:08 PM</span>
+							</span>
+						</div>
+						<div class="browse__info">
+							<h3 class="browse__heading">
+								UP Animation Movie
+							</h3>
+							<div class="browse__desc">
+								Carl, an old widower, goes off on an adventure in his flying house in search of Paradise Falls, his
+								wife's dream destination.
+							</div>
+							<div class="browse__add">Add To Watch List</div>
+						</div>
+					</div>
+					<div class="browse__movie" data-tab-group="1">
+						<div class="browse__img-box">
+							<img class="browse__img" src="images/browse/2.webp" alt="browse movie">
+							<span class="browse__duration">
+								02:10
+							</span>
+							<span class="browse__finish">
+								You can finish this movie by
+								<span class="browse__time">08:30 PM</span>
+							</span>
+						</div>
+						<div class="browse__info">
+							<h3 class="browse__heading">
+								Beauty and the Beast
+							</h3>
+							<div class="browse__desc">
+								Belle, a village girl, embarks on a journey to save her father from a creature that has locked him in
+								his dungeon.
+							</div>
+							<div class="browse__add browse__add--active">Added To Watch List</div>
+						</div>
+					</div>
+					<div class="browse__movie" data-tab-group="1">
+						<div class="browse__img-box">
+							<img class="browse__img" src="images/browse/3.webp" alt="browse movie">
+							<span class="browse__duration">
+								01:48
+							</span>
+							<span class="browse__finish">
+								You can finish this movie by
+								<span class="browse__time">08:08 PM</span>
+							</span>
+						</div>
+						<div class="browse__info">
+							<h3 class="browse__heading">
+								Big Hero 6
+							</h3>
+							<div class="browse__desc">
+								Hiro, a robotics prodigy, joins hands with Baymax in order to avenge his brother's death. They then team
+								up with Hiro's friends to form a team of high-tech heroes.
+							</div>
+							<div class="browse__add">Add To Watch List</div>
+						</div>
+					</div>
+					<div class="browse__movie" data-tab-group="2">
+						<div class="browse__img-box">
+							<img class="browse__img" src="images/browse/1.webp" alt="browse movie">
+							<span class="browse__duration">
+								01:48
+							</span>
+							<span class="browse__finish">
+								You can finish this movie by
+								<span class="browse__time">08:08 PM</span>
+							</span>
+						</div>
+						<div class="browse__info">
+							<h3 class="browse__heading">
+								UP Animation Movie (top rated)
+							</h3>
+							<div class="browse__desc">
+								Hiro, a robotics prodigy, joins hands with Baymax in order to avenge his brother's death. They then team
+								up with Hiro's friends to form a team of high-tech heroes.
+							</div>
+							<div class="browse__add">Add To Watch List</div>
+						</div>
+					</div>
+					<div class="browse__movie" data-tab-group="2">
+						<div class="browse__img-box">
+							<img class="browse__img" src="images/browse/2.webp" alt="browse movie">
+							<span class="browse__duration">
+								01:48
+							</span>
+							<span class="browse__finish">
+								You can finish this movie by
+								<span class="browse__time">08:08 PM</span>
+							</span>
+						</div>
+						<div class="browse__info">
+							<h3 class="browse__heading">
+								Beauty and the Beast (top rated)
+							</h3>
+							<div class="browse__desc">
+								Hiro, a robotics prodigy, joins hands with Baymax in order to avenge his brother's death. They then team
+								up with Hiro's friends to form a team of high-tech heroes.
+							</div>
+							<div class="browse__add">Add To Watch List</div>
+						</div>
+					</div>
+					<div class="browse__movie" data-tab-group="3">
+						<div class="browse__img-box">
+							<img class="browse__img" src="images/browse/3.webp" alt="browse movie">
+							<span class="browse__duration">
+								01:48
+							</span>
+							<span class="browse__finish">
+								You can finish this movie by
+								<span class="browse__time">08:08 PM</span>
+							</span>
+						</div>
+						<div class="browse__info">
+							<h3 class="browse__heading">
+								Big Hero 6 (new arrival)
+							</h3>
+							<div class="browse__desc">
+								Hiro, a robotics prodigy, joins hands with Baymax in order to avenge his brother's death. They then team
+								up with Hiro's friends to form a team of high-tech heroes.
+							</div>
+							<div class="browse__add">Add To Watch List</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
